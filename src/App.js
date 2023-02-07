@@ -1,9 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-
+import ThemeSwitcher from './components/theme/ThemeSwitcher';
+import SignIn from './components/login/login';
 function App() {
   return (
     <div className="App">
+      <SignIn />
+      <ThemeSwitcher />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
