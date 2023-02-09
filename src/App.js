@@ -1,26 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import ThemeSwitcher from './components/theme/ThemeSwitcher';
-import SignIn from './components/login/login';
+import HeaderOne from './components/header/HeaderOne';
+import FooterOne from './components/footer/FooterOne';
+import Navigation from './components/navigation/Navigation';
 function App() {
   return (
     <div className="App">
-      <SignIn />
-      <ThemeSwitcher />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation />
+      <HeaderOne />
+      <FooterOne />
+      <FooterOne />
+
     </div>
   );
 }
